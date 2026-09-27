@@ -30,7 +30,7 @@ foreach ($partners as &$p) {
     $p['total_withdrawn'] = $stmt->fetchColumn();
 }
 unset($p);
-
+?>
 
 <div class="max-w-7xl mx-auto flex flex-col h-[calc(100vh-8rem)]">
     
