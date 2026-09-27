@@ -4,6 +4,7 @@ require_once '../includes/auth.php';
 requireRole(['ADMIN', 'PARTNER']);
 require_once '../includes/header.php';
 require_once '../includes/sidebar.php';
+$initialFilter = $_GET['filter'] ?? '';
 ?>
 
 <div class="max-w-7xl mx-auto flex flex-col h-[calc(100vh-8rem)]">
@@ -161,6 +162,12 @@ require_once '../includes/sidebar.php';
     
     document.addEventListener('DOMContentLoaded', () => {
         loadCategories();
+        
+        const initialFilter = '<?= htmlspecialchars($initialFilter) ?>';
+        if (initialFilter) {
+            document.getElementById('statusFilter').value = initialFilter;
+        }
+
         loadInventory();
         
         // Setup filter listeners
