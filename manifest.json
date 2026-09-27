@@ -1,0 +1,21 @@
+{
+  "name": "1902 POS - Crawler Toy Store",
+  "short_name": "1902 POS",
+  "description": "Professional Point of Sale System for Crawler Toy Store",
+  "start_url": "/1902_pos/index.php",
+  "display": "standalone",
+  "background_color": "#eef2ff",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "/1902_pos/assets/img/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/1902_pos/assets/img/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
